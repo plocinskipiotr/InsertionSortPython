@@ -1,6 +1,6 @@
 import sys
 import os
-ExampleArray = [2, 3, 1, 9, 7, 6, 8, 8, 6, 3, 2, 1, 4, 12]
+ExampleArray = [2, 3, 1, 9, 7, 6, 8, 8, 6, 3, 2, 1, 4, 12, 2, 5, 2, 9, 5, 8]
 
 print("Print ExampleArray am Anfang")
 for i in ExampleArray:
@@ -11,6 +11,8 @@ for i in range(1, len(ExampleArray)):
         if ExampleArray[i-j] < ExampleArray[i-j-1]:
             ExampleArray[i-j], ExampleArray[i-j-1] \
                 = ExampleArray[i-j-1], ExampleArray[i-j]
+        else:
+            break
 
 print("Am Ende")
 for i in ExampleArray:
